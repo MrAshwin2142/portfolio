@@ -10,7 +10,7 @@ body {
     width: 80px;
 }
 
-#education {
+#education, #skills, #projects, #more {
     display: none;
 }
 
