@@ -17,32 +17,35 @@
     <div class="container">
         <div id="page-header">
             <nav class="navbar">
-                <a class="navbar-brand" href="#"> <img src="/images/logo-dark.png" id="logo"> </a>
+                <a class="navbar-brand" href="#" onclick="alertFunction(main)"> <img src="/images/logo-dark.png"
+                        id="logo"> </a>
                 <div>
                     <ul class="nav">
-                        <li class="nav-item" onclick="alertFunction()">
+                        <li class="nav-item" onclick="alertFunction(education)">
                             <a class="nav-link" href="#">Education </a>
                         </li>
-                        <li class="nav-item" onclick="alertFunction()">
+                        <li class="nav-item" onclick="alertFunction(skills)">
                             <a class="nav-link" href="#">Skils</a>
                         </li>
-                        <li class="nav-item" onclick="alertFunction()">
+
+                        <li class="nav-item" onclick="alertFunction(projects)">
                             <a class="nav-link" href="#">Projects</a>
                         </li>
-                        <li class="nav-item" onclick="alertFunction()">
+                        <li class="nav-item" onclick="alertFunction(more)">
                             <a class="nav-link" href="#">More</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div id="main-container container">
+        
+        <div id="main-container" class=" container">
             <h1>
                 Hey I'm Ashwin Dhangar
             </h1>
             <p class="description">Passionate about crafting elegant and efficient web solutions. I thrive on turning
                 ideas into digital realities through code.</p>
-                <a class="download-btn" href="/resume/SDE_Ashwin_Dhangar.pdf" download><u>Resume</u></a>
+            <a class="download-btn" href="/resume/SDE_Ashwin_Dhangar.pdf" download><u>Resume</u></a>
             <h2>Projects</h2>
             <div class="cards">
                 <div class="card">
@@ -63,7 +66,8 @@
                     </a>
                 </div>
                 <div class="card">
-                    <a href="https://www.linkedin.com/posts/ashwin-dhangar-210b80207_cpp-miniproject-project-activity-6979374060145139712-DEb8/?utm_source=share&utm_medium=member_android">
+                    <a
+                        href="https://www.linkedin.com/posts/ashwin-dhangar-210b80207_cpp-miniproject-project-activity-6979374060145139712-DEb8/?utm_source=share&utm_medium=member_android">
                         <img src="/images/BillingSystem.jpg">
                         <h5>C++ | File Handling | OOPs</h5>
                         <p>Created a Supermarket Billing System in C++ with an intuitive interface. Utilized file
@@ -72,15 +76,89 @@
                     </a>
                 </div>
             </div>
-            <div class="footer">
-                <a href="https://github.com/MrAshwin2142" title="Github"><i class="fa-brands fa-github fa-2xl"></i></a>
-                <a href="https://www.linkedin.com/in/ashwin-dhangar-210b80207/" title="Linkedin"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
-                <a href="https://leetcode.com/ashwinDhangar/" title="Leetcode"><i class="fa-solid fa-code fa-2xl"></i></a>
-                <a href="mailto:eng.ashwin01@gmail.com" title="Email"><i class="fa-regular fa-envelope fa-2xl"></i></a>
-                <a href="https://www.instagram.com/mr._ashwin_08/" title="Instagram"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+        </div>
+
+        <div id="education">
+            <h5 class="edu-desccription">During my B.Tech in Information Technology, I gained knowledge in crucial
+                subjects like DSA, OOPs, OS, CN, and DBMS. Beyond textbooks, engineering taught me how to approach
+                real-life challenges with optimized solutions, significantly enhancing my problem-solving skills and
+                contributing to my personal growth.<br><br>
+                In my senior secondary education during the 12th grade, I pursued the Mathematics stream. It was a
+                memorable time in my school life as I was honored with the 'Student of the Year' award.
+            </h5>
+            <h1>Education</h1>
+            <div class="degrees">
+                <div class="sch">
+                    <div class="edulogo">
+                        <i class="fa-solid fa-graduation-cap fa-4x"></i>
+                    </div>
+                    <div>
+                        <h3>Bachelor of Technology</h3>
+                        <h5>Jawaharlal Intitute of Technology, Borawan</h5>
+                        <ul>
+                            <li>Branch Information Technology</li>
+                            <li>8.3 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sch">
+                    <div class="edulogo">
+                        <i class="fa-solid fa-school fa-4x"></i>
+                    </div>
+                    <div>
+                        <h3>Senior Secondary</h3>
+                        <h5>Govt. High Secondary School, Dawana</h5>
+                        <ul>
+                            <li>MP Board</li>
+                            <li>Mathematics 80%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sch">
+                    <div class="edulogo">
+                        <i class="fa-solid fa-school fa-4x"></i>
+                    </div>
+                    <div>
+                        <h3>Higher Secondary</h3>
+                        <h5>Govt. High Secondary School, Dawana</h5>
+                        <ul>
+                            <li>MP Board</li>
+                            <li>Score 85%</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <h5 class="edu-desccription">I had the privilege of meeting some incredible friends and teachers during my
+                journey, and they truly
+                made my life more memorable. Every moment was a joy, filled with laughter and valuable life lessons.
+                They taught me that life is better when it's a bit funny, and I cherish those moments forever.</h5>
+            <!-- <i class="fa-solid fa-graduation-cap fa-2xl"></i> -->
+        </div>
+
+        <div id="skills">
+            <h1>working on it,will be added soon....</h1>
+        </div>
+
+        <div id="projects">
+            <h1>working on it,will be added soon....</h1>
+        </div>
+
+        <div id="more">
+            <h1>working on it,will be added soon....</h1>
+        </div>
+
+        <div class="footer">
+            <a href="https://github.com/MrAshwin2142" title="Github"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a href="https://www.linkedin.com/in/ashwin-dhangar-210b80207/" title="Linkedin"><i
+                    class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+            <a href="https://leetcode.com/ashwinDhangar/" title="Leetcode"><i class="fa-solid fa-code fa-2xl"></i></a>
+            <a href="mailto:eng.ashwin01@gmail.com" title="Email"><i class="fa-regular fa-envelope fa-2xl"></i></a>
+            <a href="https://www.instagram.com/mr._ashwin_08/" title="Instagram"><i
+                    class="fa-brands fa-instagram fa-2xl"></i></a>
         </div>
     </div>
+
+
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
