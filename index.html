@@ -8,7 +8,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"> -->
     </link>
     <title>Portfolio</title>
 </head>
@@ -31,14 +31,18 @@
                         <li class="nav-item" onclick="alertFunction(projects)">
                             <a class="nav-link" href="#">Projects</a>
                         </li>
-                        <li class="nav-item" onclick="alertFunction(more)">
+                        <!-- <li class="nav-item" onclick="alertFunction(more)">
                             <a class="nav-link" href="#">More</a>
+                        </li> -->
+                        <li class="nav-item" onclick="changeTheme()">
+                            <a class="nav-link" href="#">Change Theme</a>
                         </li>
+
                     </ul>
                 </div>
             </nav>
         </div>
-        
+
         <div id="main-container" class=" container">
             <h1>
                 Hey I'm Ashwin Dhangar
@@ -128,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <h5 class="edu-desccription">I had the privilege of meeting some incredible friends and teachers during my
+            <h5 class="description">I had the privilege of meeting some incredible friends and teachers during my
                 journey, and they truly
                 made my life more memorable. Every moment was a joy, filled with laughter and valuable life lessons.
                 They taught me that life is better when it's a bit funny, and I cherish those moments forever.</h5>
@@ -136,16 +140,101 @@
         </div>
 
         <div id="skills">
-            <h1>working on it,will be added soon....</h1>
+            <div class="main-skills">
+                <div class="description">I firmly believe in the 'learning by doing' approach, which has honed my skills
+                    in frontend web development, core subjects like Data Structures and Algorithms, and other practical
+                    aspects of software development. Here, most of these skills are still a part of my ongoing learning
+                    journey, as I believe that learning is a lifelong process.
+                </div>
+
+                <div class="skill-section">
+                    <h2>
+                        Technical Languages
+                    </h2>
+                    <div class="skill-div">
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">C++</div>
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">SQL</div>
+                    </div>
+                </div>
+
+                <div class="skill-section">
+                    <h2>
+                        Frameworks and Libraries
+                    </h2>
+
+                    <div class="skill-div">
+                        <div class="skill">React</div>
+                        <div class="skill">Bootstrap</div>
+
+                    </div>
+
+
+                    <div class="skill-section">
+                        <h2>
+                            Devlopment Tools
+                        </h2>
+                        <div class="skill-div">
+                            <div class="skill">Github</div>
+                            <div class="skill">Visual Studio Code</div>
+                            <div class="skill">Postman</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-section">
+                        <h2>
+                            Course Work
+                        </h2>
+                        <div class="skill-div">
+                            <div class="skill">DSA</div>
+                            <div class="skill">DBMS</div>
+                            <div class="skill">OS</div>
+                            <div class="skill">CN</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <div id="projects">
-            <h1>working on it,will be added soon....</h1>
+            <h2>Projects</h2>
+            <div class="cards">
+                <div class="card">
+                    <a href="https://ashwin-netflix.netlify.app/">
+                        <img src="/images/Netlix_clone.png">
+                        <h5>React | HTML | CSS | JavaScript | TMDB API</h5>
+                        <p>Developed a React-based Netflix clone with real-time movie data and API integration,
+                            showcasing web development and API integration skills</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://mrashwin2142.github.io/text-to-emoji.github.io/">
+                        <img src="/images/TextToEmoji.png">
+                        <h5> HTML | CSS | JavaScript</h5>
+                        <p>An innovative web app, converting text into emoji-coded messages for secure and enjoyable
+                            communication. Features encryption algorithms and an intuitive UI for easy, emoji-based
+                            messaging</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a
+                        href="https://www.linkedin.com/posts/ashwin-dhangar-210b80207_cpp-miniproject-project-activity-6979374060145139712-DEb8/?utm_source=share&utm_medium=member_android">
+                        <img src="/images/BillingSystem.jpg">
+                        <h5>C++ | File Handling | OOPs</h5>
+                        <p>Created a Supermarket Billing System in C++ with an intuitive interface. Utilized file
+                            handling to efficiently add and manage products, enhancing data integrity and system
+                            functionality.</p>
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div id="more">
-            <h1>working on it,will be added soon....</h1>
-        </div>
+        <!-- <div id="more">
+                <h1>working on it,will be added soon....</h1>
+            </div> -->
 
         <div class="footer">
             <a href="https://github.com/MrAshwin2142" title="Github"><i class="fa-brands fa-github fa-2xl"></i></a>
@@ -156,19 +245,18 @@
             <a href="https://www.instagram.com/mr._ashwin_08/" title="Instagram"><i
                     class="fa-brands fa-instagram fa-2xl"></i></a>
         </div>
-    </div>
 
 
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
