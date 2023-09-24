@@ -10,7 +10,11 @@ body {
     width: 80px;
 }
 
+/* <<<<<<< HEAD */
 #education,#skills {
+/* ======= */
+/* #education, #skills, #projects, #more { */
+/* >>>>>>> 85b6c865c69edbc5d561ec1d6d426c427655da85 */
     display: none;
 }
 
