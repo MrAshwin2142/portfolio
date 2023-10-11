@@ -14,6 +14,8 @@
         .hover:hover {
             border-bottom: 5px solid rgb(0, 55, 255);
             border-left: 5px solid rgb(0, 55, 255);
+            scale: 1.02;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -30,22 +32,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 fs-5 mb-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#BackGround">BackGround</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">BackGround</a>
+                        <a class="nav-link" href="#Projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#Skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contect</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -55,11 +54,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6 col-12 pt-5">
-                    <h1 class="m-2 mt-5">Hello</h1>
-                    <h2 class="m-2">I'm ASHWIN DHANGAR</h2>
-                    <h2 class="m-2 mb-5">Web Devloper</h2>
-                    <button type="button" class="btn bg-primary m-2 mb-5">Contect Me</button>
-                    <button type="button" class="btn bg-primary m-2 mb-5">Resume</button>
+                    <h3 class="m-2 mt-5">Hello</h3>
+                    <h1 class="m-2">I'm <span class="text-primary">ASHWIN DHANGAR</span></h1>
+                    <h3 class="m-2 ">Web Devloper | Problem Solver</h3>
+                    <p class="p-2">Transforming Ideas into Seamless Digital Experiences</p>
+                    <button type="button" class="btn bg-primary m-2 mb-5 text-white"> <a class="nav-link"
+                            href="#Contact">Contact</a>
+                    </button>
+                    <button type="button" class="btn bg-primary m-2 mb-5 text-white"><a class="nav-link"
+                            href="https://drive.google.com/file/d/1QGGQQfzWCWUlmTfK2G5R3HUTVAliJjdF/view?usp=sharing">Resume</a></button>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-12">
                     <img src="./image/home-right.webp" style="width: 100%;">
@@ -69,9 +72,9 @@
     </section>
     <hr />
 
-    <section class="BackGround mt-5">
+    <section class="BackGround mt-5" id="BackGround">
         <div class="container">
-            <div class="text-center my-5">
+            <div class="text-cente">
                 <h1 class="text-center">BackGround</h1>
                 <hr class="w-25 m-auto">
             </div>
@@ -80,16 +83,12 @@
                 <div class=" pt-5 mb-5 text-center">
                     <h1>What do you <span class="text-primary">want to know?</span></h1>
                     <p class="p-2">
-                        Certainly, here's a concise profile summary in under 100 words:
-
-                        "I'm a dedicated software engineer with a strong foundation in IT, excelling in React.js
-                        development. Proficient in C++, HTML, CSS, JavaScript, and SQL. I've solved 650+ algorithmic
-                        problems on LeetCode and achieved a 3-star CodeChef rating. Committed to exceptional user
-                        experiences, I'm eager to contribute my skills to innovative projects.
-                    </p>
+                        Candidate with a strong academic background pursuing a Bachelor of Technology in Information
+                        Technology (8.3 CGPA) and practical experience as a Software Engineering Intern at ConsultAdd
+                        Inc, specializing in React.js web development and gaining exposure to AWS. </p>
                 </div>
 
-                <div class="col-12 container d-flex px-4 border-bottom border-start m-5 px-5">
+                <div class="col-12 container d-flex px-4 border-bottom border-start m-5 px-5 hover">
                     <div class="my-auto mx-3"><i class="fa-brands fa-react fa-5x"></i></div>
                     <div class="mx-3">
                         <h2>Software Engineering Intern</h2>
@@ -101,7 +100,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 container d-flex px-4 border-bottom border-start m-5 px-5">
+                <div class="col-12 container d-flex px-4 border-bottom border-start m-5 px-5 hover">
                     <div class="my-auto mx-3"><i class="fa-solid fa-graduation-cap fa-5x"></i></div>
                     <div class="mx-3">
                         <h2>Bachelor of Technology</h2>
@@ -112,7 +111,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 container d-flex px-4 border-bottom border-start m-5 px-5">
+                <div class="col-12 container d-flex px-4 border-bottom border-start m-5 px-5 hover">
                     <div class="my-auto mx-3"><i class="fa-solid fa-school fa-5x"></i></div>
                     <div class="mx-3">
                         <h2>Senior Secondary</h2>
@@ -127,54 +126,63 @@
         </div>
     </section>
     <hr />
-    <section class="projects py-5">
+    <section class="projects py-5" id="Projects">
         <div class="container">
             <div class="text-center my-5">
                 <h1 class="text-center">Projects</h1>
                 <hr class="w-25 m-auto">
+                <p class="p-2">Passionate about 'learning by doing,' I approach projects with a hands-on mindset,
+                    actively seeking opportunities to apply and expand my knowledge in real-world scenarios.</p>
             </div>
-            <div class="row mx-auto text-center">
+            <div class="row mx-auto text-center d-flex justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-4 col-12 pt-5 mx-auto">
-                    <div class="card">
+                    <div class="card hover">
                         <img class="card-img-top" src="./image/Netlix_clone.png" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text">Moviezz is a web application that replicates the Netflix experience,
+                                providing real-time movie data and a user-friendly interface for seamless movie and TV
+                                show exploration.</p>
                             <button type="button" class="btn btn-primary col-5 mx-2 ">
-                                <a href="http://" target="_blank" class="text-white">Code</a>
+                                <a href="https://github.com/MrAshwin2142/moviezz" target="_blank"
+                                    class="text-white">Code</a>
                             </button>
                             <button type="button" class="btn btn-primary col-5 mx-2">
-                                <a href="http://" target="_blank" class="text-white">Live</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 col-12 pt-5">
-                    <div class="card">
-                        <img class="card-img-top" src="./image/Netlix_clone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <button type="button" class="btn btn-primary col-5 mx-2">
-                                <a href="http://" target="_blank" class="text-white">Code</a>
-                            </button>
-                            <button type="button" class="btn btn-primary col-5 mx-2">
-                                <a href="http://" target="_blank" class="text-white">Live</a>
+                                <a href="https://tmdb-moviezz.netlify.app/" target="_blank" class="text-white">Live</a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 col-12 pt-5">
-                    <div class="card">
-                        <img class="card-img-top" src="./image/Netlix_clone.png" alt="Card image cap">
+                    <div class="card hover">
+                        <img class="card-img-top" src="./image/TextToEmoji.png" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text">web app using HTML, CSS, and JavaScript,
+                                transforming text into emoji-encoded messages. Enhanced user experience with encryption
+                                algorithms and an intuitive UI.</p>
                             <button type="button" class="btn btn-primary col-5 mx-2">
-                                <a href="http://" target="_blank" class="text-white">Code</a>
+                                <a href="https://github.com/MrAshwin2142/text-to-emoji.github.io" target="_blank"
+                                    class="text-white">Code</a>
                             </button>
                             <button type="button" class="btn btn-primary col-5 mx-2">
-                                <a href="http://" target="_blank" class="text-white">Live</a>
+                                <a href="https://mrashwin2142.github.io/text-to-emoji.github.io/" target="_blank"
+                                    class="text-white">Live</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-12 pt-5">
+                    <div class="card hover">
+                        <img class="card-img-top" src="./image/BillingSystem.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Developed a C++ Supermarket Billing System with file handling for
+                                efficient product management and data storage, streamlining the billing process.</p>
+                            <button type="button" class="btn btn-primary col-5 mx-2">
+                                <a href="https://github.com/MrAshwin2142/Super-Market-Bill-System" target="_blank"
+                                    class="text-white">Code</a>
+                            </button>
+                            <button type="button" class="btn btn-primary col-5 mx-2">
+                                <a href="https://www.linkedin.com/posts/ashwin-dhangar-btech24_cpp-miniproject-project-activity-6979374060145139712-N_EY?utm_source=share&utm_medium=member_desktop"
+                                    target="_blank" class="text-white">Live</a>
                             </button>
                         </div>
                     </div>
@@ -182,21 +190,41 @@
                 <!-- </div>
                 <div class="row d-flex justify-content-center"> -->
                 <div class="col-sm-12 col-md-6 col-lg-4 col-12 pt-5">
-                    <div class="card">
-                        <img class="card-img-top" src="./image/Netlix_clone.png" alt="Card image cap">
+                    <div class="card hover">
+                        <img class="card-img-top" src="./image/jsProjects.png" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text">Developed and showcased multiple JavaScript projects, including a Color
+                                Changer, BMI Calculator, Digital Clock, and Number Guess game.</p>
                             <button type="button" class="btn btn-primary col-5 mx-2">
-                                <a href="http://" target="_blank" class="text-white">Code</a>
+                                <a href="https://github.com/MrAshwin2142/jsProjects" target="_blank"
+                                    class="text-white">Code</a>
                             </button>
                             <button type="button" class="btn btn-primary col-5 mx-2">
-                                <a href="http://" target="_blank" class="text-white">Live</a>
+                                <a href="https://mrashwin2142.github.io/jsProjects/" target="_blank"
+                                    class="text-white">Live</a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 col-12 pt-5">
+                    <div class="card hover">
+                        <img class="card-img-top" src="./image/jsGame.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">JavaScript game where a soldier avoids incoming
+                                fires, demonstrating real-time interaction and dynamic scoring with animation
+                                enhancements.</p>
+                            <button type="button" class="btn btn-primary col-5 mx-2">
+                                <a href="https://github.com/MrAshwin2142/soldier.github.io" target="_blank"
+                                    class="text-white">Code</a>
+                            </button>
+                            <button type="button" class="btn btn-primary col-5 mx-2">
+                                <a href="https://mrashwin2142.github.io/soldier.github.io/" target="_blank"
+                                    class="text-white">Live</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-12 col-md-6 col-lg-4 col-12 pt-5">
                     <div class="card">
                         <img class="card-img-top" src="./image/Netlix_clone.png" alt="Card image cap">
                         <div class="card-body">
@@ -210,27 +238,12 @@
                             </button>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 col-12 pt-5">
-                    <div class="card">
-                        <img class="card-img-top" src="./image/Netlix_clone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <button type="button" class="btn btn-primary col-5 mx-2">
-                                <a href="http://" target="_blank" class="text-white">Code</a>
-                            </button>
-                            <button type="button" class="btn btn-primary col-5 mx-2">
-                                <a href="http://" target="_blank" class="text-white">Live</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
     <hr />
-    <section>
+    <section id="Skills">
         <div class="container">
             <div class="text-center my-5">
                 <h1 class="text-center">Skills</h1>
@@ -238,15 +251,21 @@
             </div>
             <div class="codingProiles">
                 <div class="text-center my-5">
-                    <h2 class="text-center">Coding Profiles</h2>
+                    <h2 class="text-center">Coding <span class="text-primary"> Profiles </span></h2>
+                    <p class="p-2">Active participant on LeetCode with 650+ problems solved, maintaining a consistent
+                        coding streak
+                        for over 200 days. Achieved a 3-star rating on CodeChef and participated in 65+ coding contests.
+                    </p>
                     <div class="row d-flex justify-content-center">
                         <div class="col-sm-12 col-md-6 col-lg-4 col-12 pt-5">
                             <div class="card hover">
                                 <div class="card-body">
                                     <h5 class="card-title">LeetCode</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text">Achieved a 650+ coding problem solving milestone with a
+                                        consistent 200+ days of coding streak, showcasing strong problem-solving skills
+                                        and dedication.</p>
+                                    <a href="https://leetcode.com/ashwinDhangar/" class="btn btn-primary px-5">Full
+                                        Profile</a>
                                 </div>
                             </div>
                         </div>
@@ -254,9 +273,10 @@
                             <div class="card hover">
                                 <div class="card-body">
                                     <h5 class="card-title">Github</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text">GitHub is my daily learning and code showcase, where I commit
+                                        to continuous growth and share my passion for coding.</p>
+                                    <a href="https://github.com/MrAshwin2142" class="btn btn-primary px-5">Full
+                                        Profile</a>
                                 </div>
                             </div>
                         </div>
@@ -264,9 +284,11 @@
                             <div class="card hover">
                                 <div class="card-body">
                                     <h5 class="card-title">LinkedIn</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text">LinkedIn is my daily learning journal, a platform where I
+                                        showcase progress, and connect with like-minded
+                                        professionals.</p>
+                                    <a href="https://www.linkedin.com/in/ashwin-dhangar-btech24/"
+                                        class="btn btn-primary px-5">Full Profile</a>
                                 </div>
                             </div>
                         </div>
@@ -274,9 +296,10 @@
                             <div class="card hover">
                                 <div class="card-body">
                                     <h5 class="card-title">HackerRank</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text"> Where I hone my coding and problem-solving skills, tackling a
+                                        variety of challenges and competitions.</p>
+                                    <a href="https://www.hackerrank.com/ashwindhangar211?hr_r=1"
+                                        class="btn btn-primary px-5">Full Profile</a>
                                 </div>
                             </div>
                         </div>
@@ -286,7 +309,10 @@
 
             <div class="Language">
                 <div class="text-center my-5">
-                    <h2 class="text-center">Technical Languages</h2>
+                    <h2 class="text-center">Technical <span class="text-primary"> Languages</span></h2>
+                    <p class="p-2">Proficient in C++ for efficient application development, skilled in HTML, CSS, and
+                        JavaScript for frontend web development, and competent in SQL for effective database
+                        management.</p>
                     <div class="row d-flex justify-content-center">
                         <div class="col-sm-12 col-md-6 col-lg-4 col-12 pt-5">
                             <div class="card hover">
@@ -329,6 +355,9 @@
             <div class="Language">
                 <div class="text-center my-5">
                     <h2 class="text-center">Framework & <Span class="text-primary">Library</Span></h2>
+                    <p class="p-2">"Skilled in building web applications with React.js, utilizing Redux Toolkit, Axios,
+                        and Context API for state management, alongside Bootstrap for responsive and user-friendly
+                        design."</p>
                     <div class="row d-flex justify-content-center">
                         <div class="col-sm-12 col-md-6 col-lg-4 col-12 pt-5 ">
                             <div class="card hover">
@@ -358,25 +387,32 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-12 pt-5">
+                            <div class="card hover">
+                                <div class="card-body">
+                                    <h1 class="card-title">Bootstrap</h1>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <hr />
-    <section class="m-4">
+    <section class="m-4" id="Contact">
         <div class="text-center my-5">
             <h1 class="text-center">Contact</h1>
             <hr class="w-25 m-auto">
         </div>
-        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us
-            directly. Our team will come back to you within
-            a matter of hours to help you.</p>
+        <p class="text-center w-responsive mx-auto mb-5 w-50">Interested in exploring collaborations or opportunities
+            aligned with my skills? Reach out to connect, and let's discuss how we can work together to create something
+            exceptional.</p>
 
         <div class="row container m-auto">
 
             <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <form id="contact-form" name="contact-form" action="https://formsubmit.co/el/xubozo" method="POST">
 
                     <div class="row">
 
@@ -418,26 +454,26 @@
                         </div>
                     </div>
 
+                    <div class="text-center text-md-left">
+                        <button type="submit" class="bg-primary px-5 text-white">Send</button>
+                    </div>
                 </form>
 
-                <div class="text-center text-md-left">
-                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-                </div>
                 <div class="status"></div>
             </div>
 
             <div class="col-md-3 text-center">
                 <ul class="list-unstyled mb-0">
                     <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <p>San Francisco, CA 94126, USA</p>
+                        <p>Barwani MP, India 451660</p>
                     </li>
 
                     <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                        <p>+ 01 234 567 89</p>
+                        <p>+91 6263572023</p>
                     </li>
 
                     <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>contact@mdbootstrap.com</p>
+                        <p>eng.ashwin01@gmail.com</p>
                     </li>
                 </ul>
             </div>
@@ -446,9 +482,9 @@
 
     </section>
     <hr />
-    <footer>
-        <div class="mx-5">
-            <p>ⓒ 2023 Appwrite. All rights reserved.</p>
+    <footer class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center my-2">
+            Design & Code by <a href="https://www.linkedin.com/in/ashwin-dhangar-btech24/"> ASHWIN</a>
         </div>
         <div>
 
